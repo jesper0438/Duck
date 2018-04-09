@@ -1,11 +1,11 @@
 package com.company;
 
-public class ModelDuck extends Duck {
-    public ModelDuck() {
-        flyBehavior = new FlyWithRyanair();
-        quackBehavior = new Quack();
+public class ModelDuck implements Duck {
+    public void quack() {
+        System.out.println("Model Quack");
     }
-    public void display() {
-        System.out.println("i'm a model duck");
+
+    public void fly() {
+        System.out.println("Model Fly");
     }
 }

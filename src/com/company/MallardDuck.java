@@ -1,13 +1,11 @@
 package com.company;
 
-public class MallardDuck extends Duck {
-
-    public MallardDuck() {
-        quackBehavior = new Quack();
-        flyBehavior = new FlyNoWay();
+public class MallardDuck implements Duck {
+    public void quack() {
+    System.out.println("Quack");
     }
 
-    public void display() {
-        System.out.println("i'm a mallard duck");
+    public void fly() {
+        System.out.println("Fly");
     }
 }
