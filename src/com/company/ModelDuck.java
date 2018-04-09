@@ -2,7 +2,7 @@ package com.company;
 
 public class ModelDuck extends Duck {
     public ModelDuck() {
-        flyBehavior = new FlyNoWay();
+        flyBehavior = new FlyWithRyanair();
         quackBehavior = new Quack();
     }
     public void display() {
